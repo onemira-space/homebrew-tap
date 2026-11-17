@@ -1,0 +1,15 @@
+name: Verify Formulae
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Ruby syntax of all formulae
+        run: |
+          for f in Formula/*.rb; do
+            ruby -c "$f"
+          done
