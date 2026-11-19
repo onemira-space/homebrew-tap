@@ -8,7 +8,8 @@ Built for local-first workflows alongside **[OneMira C1](https://onemira.com/pro
 
 ```bash
 brew tap onemira-space/tap
-brew install okf-markdown meeting-minutes-md recorder-tco
+brew install --cask onemira
+brew install okf-markdown meeting-minutes-md recorder-tco okf-wiki-mcp
 ```
 
 ## Available Formulae
